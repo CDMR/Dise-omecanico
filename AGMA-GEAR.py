@@ -1,21 +1,32 @@
 import math
 pi = 3.14159365359
-
+rad=57.3#[degrees]
 #pitch line speed
-R=0.1618#radius of the pitch circle[in]
-w=0.1618#angular velocity of the gear[]
-n=0.1618#Speed of rotation [RPM]
+RP=0.1618#pinion pitch circle radius[in]
+DP=RP*2#Pitch circle diameter
+nP=0.1618#pinion rotation speed[rev/min]
+#vt=R*w pitch radius for angular velocity
+#vt=R*(nrev/1min)*(2*pi*rad/1rev)*(1ft/12in) 
+vt=R*n*pi*(1/6)x#pitch line speed[ft/min]
 
-R*n*pi*(1/6)#vt=R*w pitch line speed[ft/min]
+#The velocity of the ratio can be expresses in many ways and always is equal or greather than 1
+VR=(nP/nG)#speed rotation rpm,(wP/wG)angular velocity d/t,(RG/RP)radius,(NG/NP)number of teeths
+
+NP=18#numero de dientes en el piñon
+
+#The gear ratio
+mg=NG/NP
+
+#Diametral pitch
+Pd=NG/DG#NP/DP
+
 #The desings of columns, In a desing situation. the expected load on the column would be known
 #Specify or solve for dimensions such that
 #Analysisof along column employs the Euler formula for long columns critical load (longitudinal compression load on column)
 A=0.1618# is the cross section area for circular profile
-E=0.1618# is the elastic of
+E=0.1618# is the elastic 
 
 Pcr=(math.pow(pi,2)*E*I)/math.pow ((K*L),2)#critical load   Euler alternative for Pcr=(math.pow(pi,2)*E*A)/math.pow((K*L)/r),[1N= 0.10197 kg(fuerza) × 9.80665 m/s2 ] masa por aceleracion
-Np=18#numero de dientes en el piñon
-Ng=70#numero de dientes en corona
 
 Pd=12#paso diametral
 F=1.5#ancho de cara
