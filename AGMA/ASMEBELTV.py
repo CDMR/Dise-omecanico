@@ -1,5 +1,5 @@
 import math
-pi = 3.14159365359
+pi = 3.14159265359
 rad=180/pi#[degrees]
 D1=125/25.4#Diametro de paso de la shee[in]
 w1=2000#velocidad de giro[rpm]
@@ -13,7 +13,7 @@ C=D1+D2
 L=2*C+1.57*(D2+D1)+(math.pow((D2-D1),2))/(4*C)
 #Se selecciona la banda que se acercar a las especificaciones de potencia
 B=4*L-6.28*(D2+D1)
-#Se y se ajusta la  entre centros tal que cumpla
+#Se y se ajusta la distancia C entre centros tal que cumpla
 C=(B+math.sqrt(math.pow(B,2)-32*math.pow((D2-D1),2)))/(16)
 L=2*C+1.57*(D2+D1)+(math.pow((D2-D1),2))/(4*C)
 #La longitud S de "span" entre las dos poleas
