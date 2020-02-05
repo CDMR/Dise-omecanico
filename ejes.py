@@ -9,4 +9,6 @@ M=F*l#Momento flector
 sig=M*(d/2)/Ix#esfuerzo normales max por flexion
 Ttor=(Tpar*(d/2))/J0#esfuerzo maximo por torsion
 Tmax=((sig)**2+Ttor**2)**(1/2)#torsion y flexion combinados
-Tadm=(Ru/2)/FS#
+FS=2#Factor de Seguridad
+Ru=#Resistenciaa ultima[Kg/mm<sup>2</sup>]
+Tadm=(Ru/2)/FS#Cortante maxio admisible
