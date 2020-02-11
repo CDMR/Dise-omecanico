@@ -1,4 +1,4 @@
-#EJE de giro de seccion circular solido de
+#EJE de giro de seccion circular solido de(function(figuras compuestas(rectangulo),eje neutro))
 d=1.618#diametro[mm]
 l=10#de longitud [mm]
 #Teorema de ejes paralelos para cambiar de pocision en el plano xy el eje de giro
